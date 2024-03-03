@@ -1,4 +1,16 @@
 #!/bin/bash
+
+yc compute instance list | grep -E '[[:alpha:][:digit:]]{20}' > tmp7YC.txt
+awk '{print $2}' tmp7YC.txt > tmp8YC.txt
+wc -l tmp8YC.txt > tmpVMCount.txt
+awk '{print $1}' tmpVMCount.txt > tmp9YC.txt
+vmCount=$(cat tmp9YC.txt)
+for ((instanceCount = 1; instanceCount <= $vmCount; instanceCount++))
+do
+vmName=$(cat tmp8YC.txt | head -n$instanceCount)
+yc compute instance delete --id $vmName
+done
+
 yc vpc subnet list | grep -E '[[:alpha:][:digit:]]{20}' > tmpYC.txt
 awk '{print $2}' tmpYC.txt > tmp2YC.txt
 wc -l tmp2YC.txt > tmpCount.txt
