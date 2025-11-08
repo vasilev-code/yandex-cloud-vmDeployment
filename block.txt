@@ -1,8 +1,8 @@
 0.0.0.0 ad.adriver.ru
 0.0.0.0 ad.mail.ru
-0.0.0.0 lomont.site
-0.0.0.0 ya-ligh.com
-0.0.0.0 weborama-tech.ru
-0.0.0.0 trafficbass.com
-0.0.0.0 kinescope.io
-0.0.0.0 aniboom.one
+0.0.0.0 *.lomont.site
+0.0.0.0 *.ya-ligh.com
+0.0.0.0 *.weborama-tech.ru
+0.0.0.0 *.trafficbass.com
+0.0.0.0 *.kinescope.io
+0.0.0.0 *.aniboom.one
