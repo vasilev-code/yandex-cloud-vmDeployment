@@ -1,3 +1,1 @@
-#0.0.0.0 s7.lomont.site
-#0.0.0.0 ad.adriver.ru
-#0.0.0.0 ad.mail.ru
+
