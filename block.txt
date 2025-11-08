@@ -6,3 +6,4 @@
 0.0.0.0 trafficbass.com
 0.0.0.0 kinescope.io
 0.0.0.0 aniboom.one
+0.0.0.0 kinescopecdn.net
